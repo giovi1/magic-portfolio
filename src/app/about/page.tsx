@@ -7,6 +7,7 @@ import {
   Icon,
   IconButton,
   Media,
+  SmartLink,
   Tag,
   Text,
   Meta,
@@ -40,14 +41,9 @@ export default function About() {
       items: about.work.experiences.map((experience) => experience.company),
     },
     {
-      title: about.technical.title,
-      display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
-    },
-    {
-      title: about.hometown.title,
-      display: about.hometown.display,
-      items: [],
+      title: about.beyondAI.title,
+      display: about.beyondAI.display,
+      items: about.beyondAI.interests.map((interest) => interest.title),
     },
   ];
   return (
@@ -247,64 +243,51 @@ export default function About() {
             </>
           )}
 
-          {about.technical.display && (
+          {about.beyondAI.display && (
             <>
-              <Heading
-                as="h2"
-                id={about.technical.title}
-                variant="display-strong-s"
-                marginBottom="40"
-              >
-                {about.technical.title}
-              </Heading>
-              <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <Media
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
-                  </Column>
-                ))}
-              </Column>
-            </>
-          )}
-
-          {about.hometown.display && (
-            <>
-              <Heading as="h2" id={about.hometown.title} variant="display-strong-s" marginBottom="m">
-                {about.hometown.title}
+              <Heading as="h2" id={about.beyondAI.title} variant="display-strong-s" marginBottom="m">
+                {about.beyondAI.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                <Text variant="body-default-m" onBackground="neutral-weak">
-                  {about.hometown.description}
+                <Text variant="body-default-m" onBackground="neutral-weak" marginBottom="l">
+                  {about.beyondAI.description}
                 </Text>
+                <Column fillWidth gap="l">
+                  {about.beyondAI.interests.map((interest, index) => (
+                    <Column key={`${interest.title}-${index}`} fillWidth gap="4">
+                      <Text id={interest.title} variant="heading-strong-l">{interest.title}</Text>
+                      <Text variant="body-default-m" onBackground="neutral-weak">
+                        {interest.description}
+                      </Text>
+                      {interest.images && interest.images.length > 0 && (
+                        <Flex fillWidth paddingTop="m" gap="12" wrap>
+                          {interest.images.map((image, index) => (
+                            <Flex
+                              key={index}
+                              border="neutral-medium"
+                              radius="m"
+                              //@ts-ignore
+                              minWidth={image.width}
+                              //@ts-ignore
+                              height={image.height}
+                            >
+                              <Media
+                                enlarge
+                                radius="m"
+                                //@ts-ignore
+                                sizes={image.width.toString()}
+                                //@ts-ignore
+                                alt={image.alt}
+                                //@ts-ignore
+                                src={image.src}
+                              />
+                            </Flex>
+                          ))}
+                        </Flex>
+                      )}
+                    </Column>
+                  ))}
+                </Column>
               </Column>
             </>
           )}

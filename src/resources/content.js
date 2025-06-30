@@ -8,7 +8,7 @@ const person = {
   },
   role: "AI Engineer | PhD student",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  email: "panellagnni@gmail.com",
   location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Italian", "English"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -37,6 +37,11 @@ const social = [
     name: "LinkedIn",
     icon: "linkedin",
     link: "https://www.linkedin.com/in/giovannipanella/",
+  },
+  {
+    name: "Google Scholar",
+    icon: "googleScholar",
+    link: "https://scholar.google.com/citations?user=NkoSWDAAAAAJ",
   },
   // {
   //   name: "Threads",
@@ -124,71 +129,121 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Pi Campus",
+        timeframe: "2024-2025",
+        role: "Pi School of AI | AI Fellow",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Full €12.500 scholarship recipient
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Developed LLM-based contract drafting system          
+          </>,
+          <>
+            Collaborated with global engineering team
+          </>,
+          <>
+            Project-based AI school taught by experts from world-leading AI companies such as OpenAI, Google, Meta and sponsored by Translated.
+          </>
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/pischool.jpg",
+            alt: "Pi Campus Project",
+            width: 16,
+            height: 10,
+          },
+        ],
+      },
+      {
+        company: "University of Modena and Reggio Emilia",
+        timeframe: "2019",
+        role: "Msc in Computer Science",
+        achievements: [
+          <>
+            Thesis on Human Action Recognition
           </>,
         ],
+        images: [
+          {
+            src: "/images/projects/project-01/unimore.jpg",
+            alt: "unimore",
+            width: 10,
+            height: 10,
+          },
+        ],
+      },
+    ],
+  },
+  beyondAI: {
+    display: true, // set to false to hide this section
+    title: "Beyond AI",
+    description: (
+      <>
+        When I'm not working on AI research and development, I enjoy exploring other interests and activities that keep me balanced and inspired.
+      </>
+    ),
+    interests: [
+      {
+        title: "My Hometown",
+        description: (
+          <>
+            Born and raised in the beautiful city of Reggio Calabria,
+            where the Mediterranean Sea meets the mountains. The city's rich history, stunning architecture, and vibrant culture have shaped who I am today.
+            From the famous Riace Bronzes to the breathtaking views of the Strait of Messina, Reggio Calabria is truly a gem of southern Italy.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/gallery/reggio1.jpg",
+            alt: "Reggio Calabria",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/gallery/reggio2.jpg",
+            alt: "Reggio Calabria",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/gallery/reggio3.jpg",
+            alt: "Reggio Calabria",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/gallery/reggio4.jpg",
+            alt: "Reggio Calabria",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Photography",
+        description: <>Capturing moments and exploring through the lens.</>,
+        images: [
+          {
+            src: "/images/gallery/isole1.jpeg",
+            alt: "isole1",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/gallery/isole2.jpeg",
+            alt: "isole2",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Playing trumpet",
+        description: <>Former trumpet player with the Orchestra of Reggio Calabria, having performed under the legendary Maestro Riccardo Muti. I hold a degree from the conservatory, which has greatly enhanced my musical expertise. 🎺 🎵</>,
         images: [],
       },
     ],
-  },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
-  hometown: {
-    display: true, // set to false to hide this section
-    title: "My Hometown",
-    description: (
-      <>
-        Born and raised in the beautiful city of Reggio Calabria,
-        where the Mediterranean Sea meets the mountains. The city's rich history, stunning architecture, and vibrant culture have shaped who I am today.
-        From the famous Riace Bronzes to the breathtaking views of the Strait of Messina, Reggio Calabria is truly a gem of southern Italy.
-      </>
-    ),
   },
 };
 
