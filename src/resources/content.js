@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Giovanni",
+  lastName: "Panella",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "AI Engineer | PhD student",
   avatar: "/images/avatar.jpg",
   email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Italian", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -18,8 +18,9 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I'm a PhD candidate at the University of Naples Federico II. 
+      My research focuses on developing AI-powered applications for precision agriculture,
+      aiming to enhance crop health monitoring and promote sustainable farming practices.
     </>
   ),
 };
@@ -30,22 +31,22 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/giovi1",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/giovannipanella/",
   },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  // },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: "mailto:panellagnni@gmail.com",
   },
 ];
 
@@ -55,7 +56,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Giovanni Panella</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -63,8 +64,8 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm a PhD candidate at the University of Naples Federico II. My research focuses on developing AI-powered applications for precision agriculture, aiming to enhance crop health monitoring and promote sustainable farming practices.
+
     </>
   ),
 };
@@ -90,37 +91,35 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
-      </>
+  I'm a PhD candidate at the University of Naples Federico II. My research focuses on developing AI-powered applications for precision agriculture, aiming to enhance crop health monitoring and promote sustainable farming practices.      </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "University of Naples Federico II & CNR (Italian National Research Council)",
+        timeframe: "2023 - 2026",
+        role: "PhD Candidate",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Researching and developing AI models for precision agriculture applications based on Bioristor sensor.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/unina.jpg",
+            alt: "Once UI Project",
+            width: 10,
+            height: 10,
+          },
+          {
+            src: "/images/projects/project-01/logo_CNR_compatto.png",
             alt: "Once UI Project",
             width: 16,
-            height: 9,
+            height: 10,
           },
         ],
       },
@@ -139,20 +138,6 @@ const about = {
           </>,
         ],
         images: [],
-      },
-    ],
-  },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
@@ -193,6 +178,17 @@ const about = {
         ],
       },
     ],
+  },
+  hometown: {
+    display: true, // set to false to hide this section
+    title: "My Hometown",
+    description: (
+      <>
+        Born and raised in the beautiful city of Reggio Calabria,
+        where the Mediterranean Sea meets the mountains. The city's rich history, stunning architecture, and vibrant culture have shaped who I am today.
+        From the famous Riace Bronzes to the breathtaking views of the Strait of Messina, Reggio Calabria is truly a gem of southern Italy.
+      </>
+    ),
   },
 };
 

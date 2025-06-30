@@ -1,0 +1,21 @@
+{
+  "name": "Giovanni Panella",
+  "short_name": "GP",
+  "description": "PhD candidate at the University of Naples Federico II",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+} 
