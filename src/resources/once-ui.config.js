@@ -106,7 +106,7 @@ const effects = {
   },
   dots: {
     display: true,
-    opacity: 100,
+    opacity: 80,
     size: "4",
     color: "brand-background-strong",
   },
