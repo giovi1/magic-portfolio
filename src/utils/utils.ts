@@ -24,7 +24,8 @@ import { notFound } from 'next/navigation';
 
 function getMDXFiles(dir: string) {
   if (!fs.existsSync(dir)) {
-    notFound();
+    console.warn(`Directory does not exist: ${dir}`);
+    return [];
   }
 
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
@@ -32,7 +33,8 @@ function getMDXFiles(dir: string) {
 
 function readMDXFile(filePath: string) {
     if (!fs.existsSync(filePath)) {
-        notFound();
+        console.warn(`File does not exist: ${filePath}`);
+        return { metadata: {} as Metadata, content: "" };
     }
 
   const rawContent = fs.readFileSync(filePath, "utf-8");

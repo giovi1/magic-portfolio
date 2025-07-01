@@ -1,7 +1,7 @@
 import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+const baseURL = "https://giovannipanella.it"; // Replace with your actual domain
 
 const routes = {
   "/": true,
@@ -61,15 +61,15 @@ const fonts = {
 // default customization applied to the HTML in the main layout.tsx
 const style = {
   theme: "system", // dark | light | system
-  neutral: "gray", // sand | gray | slate | custom
+  neutral: "sand", // sand | gray | slate | custom
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
-  border: "playful", // rounded | playful | conservative
+  border: "rounded", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
-  scaling: "100" // 90 | 95 | 100 | 105 | 110
+  scaling: "90" // 90 | 95 | 100 | 105 | 110
 };
 
 const dataStyle = {
@@ -174,17 +174,18 @@ const mailchimp = {
 // default schema data
 const schema = {
   logo: "",
-  type: "Organization",
-  name: "Once UI",
+  type: "Person", // Changed to Person for personal portfolio
+  name: "Giovanni Panella", // Replace with your actual name
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "panellagnni@gmail.com", // Replace with your actual email
 };
 
 // social links
 const sameAs = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  // threads: "https://www.threads.com/@yourusername",
+  linkedin: "https://www.linkedin.com/in/giovannipanella/",
+  // discord: "https://discord.com/invite/yourinvite",
+  // Add or remove social links as needed
 };
 
 export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
