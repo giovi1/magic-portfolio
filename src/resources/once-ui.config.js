@@ -61,7 +61,7 @@ const fonts = {
 // default customization applied to the HTML in the main layout.tsx
 const style = {
   theme: "system", // dark | light | system
-  neutral: "sand", // sand | gray | slate | custom
+  neutral: "gray", // sand | gray | slate | custom
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
@@ -69,7 +69,7 @@ const style = {
   border: "rounded", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
-  scaling: "90" // 90 | 95 | 100 | 105 | 110
+  scaling: "100" // 90 | 95 | 100 | 105 | 110
 };
 
 const dataStyle = {
@@ -88,13 +88,13 @@ const dataStyle = {
 
 const effects = {
   mask: {
-    cursor: false,
+    cursor: true,
     x: 50,
     y: 0,
     radius: 100,
   },
   gradient: {
-    display: false,
+    display: true,
     opacity: 100,
     x: 50,
     y: 60,
@@ -106,19 +106,19 @@ const effects = {
   },
   dots: {
     display: true,
-    opacity: 40,
-    size: "2",
+    opacity: 100,
+    size: "4",
     color: "brand-background-strong",
   },
   grid: {
-    display: false,
+    display: true,
     opacity: 100,
     color: "neutral-alpha-medium",
     width: "0.25rem",
     height: "0.25rem",
   },
   lines: {
-    display: false,
+    display: true,
     opacity: 100,
     color: "neutral-alpha-weak",
     size: "16",
