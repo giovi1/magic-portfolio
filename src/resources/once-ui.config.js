@@ -61,7 +61,7 @@ const fonts = {
 // default customization applied to the HTML in the main layout.tsx
 const style = {
   theme: "system", // dark | light | system
-  neutral: "gray", // sand | gray | slate | custom
+  neutral: "slate", // sand | gray | slate | custom
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
@@ -106,20 +106,20 @@ const effects = {
   },
   dots: {
     display: true,
-    opacity: 80,
+    opacity: 50,
     size: "4",
     color: "brand-background-strong",
   },
   grid: {
     display: true,
-    opacity: 100,
+    opacity: 50,
     color: "neutral-alpha-medium",
     width: "0.25rem",
     height: "0.25rem",
   },
   lines: {
     display: true,
-    opacity: 100,
+    opacity: 50,
     color: "neutral-alpha-weak",
     size: "16",
     thickness: 1,

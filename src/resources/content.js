@@ -70,7 +70,6 @@ const home = {
   subline: (
     <>
       I'm a PhD candidate at the University of Naples Federico II. My research focuses on developing AI-powered applications for precision agriculture, aiming to enhance crop health monitoring and promote sustainable farming practices.
-
     </>
   ),
 };
