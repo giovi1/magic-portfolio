@@ -59,17 +59,16 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Giovanni Panella</>,
   featured: {
-    display: true,
+    display: false,
     title: <>Recent project: <strong className="ml-4">Pi School of AI</strong></>,
     href: "/work/pi-school-ai-experience",
   },
   subline: (
     <>
-      I'm a PhD candidate at the University of Naples Federico II. My research focuses on developing AI-powered applications for precision agriculture, aiming to enhance crop health monitoring and promote sustainable farming practices.
     </>
   ),
 };
@@ -87,7 +86,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -116,14 +115,14 @@ const about = {
           {
             src: "/images/projects/project-01/unina.jpg",
             alt: "Once UI Project",
-            width: 10,
-            height: 10,
+            width: 5,
+            height: 5,
           },
           {
             src: "/images/projects/project-01/logo_CNR_compatto.png",
             alt: "Once UI Project",
-            width: 16,
-            height: 10,
+            width: 5,
+            height: 5,
           },
         ],
       },
@@ -149,8 +148,8 @@ const about = {
           {
             src: "/images/projects/project-01/pischool.jpg",
             alt: "Pi Campus Project",
-            width: 16,
-            height: 10,
+            width: 10,
+            height: 5,
           },
         ],
       },
@@ -167,8 +166,8 @@ const about = {
           {
             src: "/images/projects/project-01/unimore.jpg",
             alt: "unimore",
-            width: 10,
-            height: 10,
+            width: 5,
+            height: 5,
           },
         ],
       },

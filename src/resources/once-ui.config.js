@@ -60,13 +60,13 @@ const fonts = {
 
 // default customization applied to the HTML in the main layout.tsx
 const style = {
-  theme: "system", // dark | light | system
-  neutral: "slate", // sand | gray | slate | custom
-  brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
+  theme: "dark", // dark | light | system
+  neutral: "sand", // sand | gray | slate | custom
+  brand: "orange", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
-  border: "rounded", // rounded | playful | conservative
+  border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
   scaling: "100" // 90 | 95 | 100 | 105 | 110
@@ -91,7 +91,7 @@ const effects = {
     cursor: true,
     x: 50,
     y: 0,
-    radius: 100,
+    radius: 50,
   },
   gradient: {
     display: true,
@@ -106,20 +106,20 @@ const effects = {
   },
   dots: {
     display: true,
-    opacity: 50,
-    size: "4",
+    opacity: 20,
+    size: "3",
     color: "brand-background-strong",
   },
   grid: {
     display: true,
-    opacity: 50,
+    opacity: 10,
     color: "neutral-alpha-medium",
     width: "0.25rem",
     height: "0.25rem",
   },
   lines: {
     display: true,
-    opacity: 50,
+    opacity: 10,
     color: "neutral-alpha-weak",
     size: "16",
     thickness: 1,
