@@ -105,6 +105,7 @@ const about = {
         company: "University of Naples Federico II",
         timeframe: "2023 - 2026",
         role: "PhD Candidate, in collaboration with CNR (Italian National Research Council)",
+        link: "https://www.phd-ai.it",
         achievements: [
           <>
             Researching and developing AI models for precision agriculture applications based on Bioristor sensor.
@@ -126,6 +127,7 @@ const about = {
         company: "Pi Campus",
         timeframe: "2024-2025",
         role: "Pi School of AI | AI Fellow",
+        link: "https://picampus-school.com",
         achievements: [
           <>
             Full €12.500 scholarship recipient

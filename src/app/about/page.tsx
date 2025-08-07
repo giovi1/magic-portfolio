@@ -188,52 +188,80 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
-                  <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
-                        {experience.timeframe}
-                      </Text>
-                    </Flex>
-                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
-                      {experience.role}
-                    </Text>
-                    <Column as="ul" gap="16">
-                      {experience.achievements.map((achievement: JSX.Element, index: number) => (
+                  <SmartLink
+                    href={experience.link}
+                    key={`${experience.company}-${experience.role}-${index}`}
+                  >
+                    <Column fillWidth>
+                      <Flex
+                        fillWidth
+                        horizontal="space-between"
+                        vertical="end"
+                        marginBottom="4"
+                      >
                         <Text
-                          as="li"
-                          variant="body-default-m"
-                          key={`${experience.company}-${index}`}
+                          id={experience.company}
+                          variant="heading-strong-l"
                         >
-                          {achievement}
+                          {experience.company}
                         </Text>
-                      ))}
-                    </Column>
-                    {experience.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
-                        {experience.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            height="40"
-                            style={{
-                              filter: "saturate(0) contrast(0)",
-                              opacity: 0.5,
-                            }}
-                          >
-                            <Media
-                              enlarge
-                              radius="m"
-                              sizes="auto"
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
+                        <Text
+                          variant="heading-default-xs"
+                          onBackground="neutral-weak"
+                        >
+                          {experience.timeframe}
+                        </Text>
                       </Flex>
-                    )}
-                  </Column>
+                      <Text
+                        variant="body-default-s"
+                        onBackground="brand-weak"
+                        marginBottom="m"
+                      >
+                        {experience.role}
+                      </Text>
+                      <Column as="ul" gap="16">
+                        {experience.achievements.map(
+                          (achievement: JSX.Element, index: number) => (
+                            <Text
+                              as="li"
+                              variant="body-default-m"
+                              key={`${experience.company}-${index}`}
+                            >
+                              {achievement}
+                            </Text>
+                          )
+                        )}
+                      </Column>
+                      {experience.images.length > 0 && (
+                        <Flex
+                          fillWidth
+                          paddingTop="m"
+                          paddingLeft="40"
+                          gap="12"
+                          wrap
+                        >
+                          {experience.images.map((image, index) => (
+                            <Flex
+                              key={index}
+                              height="40"
+                              style={{
+                                filter: "saturate(0) contrast(0)",
+                                opacity: 0.5,
+                              }}
+                            >
+                              <Media
+                                enlarge
+                                radius="m"
+                                sizes="auto"
+                                alt={image.alt}
+                                src={image.src}
+                              />
+                            </Flex>
+                          ))}
+                        </Flex>
+                      )}
+                    </Column>
+                  </SmartLink>
                 ))}
               </Column>
             </>
