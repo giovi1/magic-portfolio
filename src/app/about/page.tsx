@@ -216,21 +216,17 @@ export default function About() {
                         {experience.images.map((image, index) => (
                           <Flex
                             key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
+                            height="40"
+                            style={{
+                              filter: "saturate(0) contrast(0)",
+                              opacity: 0.5,
+                            }}
                           >
                             <Media
                               enlarge
                               radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
+                              sizes="auto"
                               alt={image.alt}
-                              //@ts-ignore
                               src={image.src}
                             />
                           </Flex>

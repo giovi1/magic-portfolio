@@ -102,9 +102,9 @@ const about = {
     title: "Experience",
     experiences: [
       {
-        company: "University of Naples Federico II & CNR (Italian National Research Council)",
+        company: "University of Naples Federico II",
         timeframe: "2023 - 2026",
-        role: "PhD Candidate",
+        role: "PhD Candidate, in collaboration with CNR (Italian National Research Council)",
         achievements: [
           <>
             Researching and developing AI models for precision agriculture applications based on Bioristor sensor.
@@ -115,14 +115,10 @@ const about = {
           {
             src: "/images/projects/project-01/unina.jpg",
             alt: "Once UI Project",
-            width: 5,
-            height: 5,
           },
           {
             src: "/images/projects/project-01/logo_CNR_compatto.png",
             alt: "Once UI Project",
-            width: 5,
-            height: 5,
           },
         ],
       },
@@ -148,8 +144,6 @@ const about = {
           {
             src: "/images/projects/project-01/pischool.jpg",
             alt: "Pi Campus Project",
-            width: 10,
-            height: 5,
           },
         ],
       },
@@ -166,8 +160,6 @@ const about = {
           {
             src: "/images/projects/project-01/unimore.jpg",
             alt: "unimore",
-            width: 5,
-            height: 5,
           },
         ],
       },
