@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta, Schema } from "@once-ui-system/core";
+import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta, Schema, Icon } from "@once-ui-system/core";
 import { home, about, person, newsletter, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
@@ -42,6 +42,48 @@ export default function Home() {
               {home.subline}
             </Text>
           </RevealFx>
+          <Column fillWidth gap="l" paddingBottom="32">
+            <RevealFx translateY="12" delay={0.3} fillWidth horizontal="start">
+              <Heading as="h2" variant="display-strong-s">
+                {home.latestNews.title}
+              </Heading>
+            </RevealFx>
+            {home.news.map((item, index) => (
+              <RevealFx key={index} translateY="12" delay={0.3 + index * 0.1} fillWidth horizontal="start">
+                <Flex
+                  direction="column"
+                  gap="m"
+                  padding="l"
+                  background="brand-alpha-weak"
+                  border="brand-alpha-medium"
+                  radius="l"
+                >
+                  <Flex vertical="center" gap="m">
+                    <Icon name={item.icon} size="m" onBackground="neutral-strong" />
+                    <Heading as="h3" variant="heading-strong-m">
+                      {item.title}
+                    </Heading>
+                  </Flex>
+                  <Text variant="body-default-m" onBackground="neutral-weak">
+                    {item.description}
+                  </Text>
+                  {item.button.display && (
+                    <Flex horizontal="start" paddingTop="m">
+                      <Button
+                        href={item.button.href}
+                        variant="secondary"
+                        size="m"
+                        weight="default"
+                        arrowIcon
+                      >
+                        {item.button.label}
+                      </Button>
+                    </Flex>
+                  )}
+                </Flex>
+              </RevealFx>
+            ))}
+          </Column>
           <RevealFx paddingTop="12" delay={0.4} horizontal="start" paddingLeft="12">
             <Button
               id="about"

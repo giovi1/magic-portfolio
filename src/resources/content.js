@@ -1,4 +1,5 @@
-import { Logo } from "@once-ui-system/core";
+import { Logo, SmartLink } from "@once-ui-system/core";
+import React from "react";
 
 const person = {
   firstName: "Giovanni",
@@ -71,6 +72,29 @@ const home = {
     <>
     </>
   ),
+  latestNews: {
+    title: "Latest News",
+  },
+  news: [
+    {
+      display: true,
+      title: "Seeking a Visiting PhD Position",
+      description: (
+        <>
+          I am actively seeking a visiting PhD position to broaden my knowledge
+          and collaborate with international experts.
+          If you have a potential opening, please feel free to contact me.
+        </>
+      ),
+      date: "2024-01-01",
+      icon: "rocket",
+      button: {
+        display: true,
+        label: "Contact me",
+        href: `mailto:${person.email}`,
+      },
+    },
+  ],
 };
 
 const about = {
@@ -94,7 +118,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-  I'm a PhD candidate at the University of Naples Federico II. My research focuses on developing AI-powered applications for precision agriculture, aiming to enhance crop health monitoring and promote sustainable farming practices.      </>
+  I'm a second year PhD candidate at the University of Naples Federico II. My research focuses on developing AI-powered applications for precision agriculture, aiming to enhance crop health monitoring and promote sustainable farming practices.      </>
     ),
   },
   work: {
