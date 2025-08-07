@@ -34,7 +34,10 @@ export default function Home() {
           )}
           <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="16">
             <Heading wrap="balance" variant="display-strong-l">
-              {home.headline}
+              <Flex as="span" vertical="center" gap="m">
+                <Icon name="rocket" size="l" onBackground="neutral-strong" />
+                {home.headline}
+              </Flex>
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="32">
