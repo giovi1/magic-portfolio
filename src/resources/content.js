@@ -18,7 +18,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I'm a PhD candidate at the University of Naples Federico II. 
+      I'm a second year PhD candidate at the University of Naples Federico II. 
       My research focuses on developing AI-powered applications for precision agriculture,
       aiming to enhance crop health monitoring and promote sustainable farming practices.
     </>
