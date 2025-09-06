@@ -54,6 +54,11 @@ const social = [
     icon: "email",
     link: "mailto:panellagnni@gmail.com",
   },
+  {
+    name: "Career Map",
+    icon: "globe",
+    link: "/career-map.html",
+  },
 ];
 
 const home = {
