@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_69955de2bcb6b5f20c3877d3b103e354 {
+                #map_d8dc8adfea4556a96aa304fe3a4333bf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -66,7 +66,7 @@
 <body>
     
     
-            <div class="folium-map" id="map_69955de2bcb6b5f20c3877d3b103e354" ></div>
+            <div class="folium-map" id="map_d8dc8adfea4556a96aa304fe3a4333bf" ></div>
         
     
 <style>
@@ -93,8 +93,8 @@
 <script>
     
     
-            var map_69955de2bcb6b5f20c3877d3b103e354 = L.map(
-                "map_69955de2bcb6b5f20c3877d3b103e354",
+            var map_d8dc8adfea4556a96aa304fe3a4333bf = L.map(
+                "map_d8dc8adfea4556a96aa304fe3a4333bf",
                 {
                     center: [41.5, 13.5],
                     crs: L.CRS.EPSG3857,
@@ -106,13 +106,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            L.control.scale().addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
 
             
 
         
     
-            var tile_layer_9218eac0526b4e488202ad0ffb2fc336 = L.tileLayer(
+            var tile_layer_b23c6f181d31e3b08b8332a75c9e7aba = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -129,10 +129,10 @@
             );
         
     
-            tile_layer_9218eac0526b4e488202ad0ffb2fc336.addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            tile_layer_b23c6f181d31e3b08b8332a75c9e7aba.addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
         
     
-            var tile_layer_e68184c9336961fa04abb5d52c5d0f23 = L.tileLayer(
+            var tile_layer_7f8254824f2e44a73d92e97c857df60e = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -149,15 +149,15 @@
             );
         
     
-            tile_layer_e68184c9336961fa04abb5d52c5d0f23.addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            tile_layer_7f8254824f2e44a73d92e97c857df60e.addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
         
     
-            var tile_layer_39c7989ffa5be6ff8e2199164deb9225 = L.tileLayer(
+            var tile_layer_9f1dd9a310aed815620dddeeed2ba42d = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_e37bad4dbe96322d3a6316432babdcdd = new L.Control.MiniMap(
-                tile_layer_39c7989ffa5be6ff8e2199164deb9225,
+            var mini_map_1f0010e125a461eddfdb6ef3ee38ee12 = new L.Control.MiniMap(
+                tile_layer_9f1dd9a310aed815620dddeeed2ba42d,
                 {
   "position": "bottomright",
   "width": 150,
@@ -172,7 +172,7 @@
   "minimized": false,
 }
             );
-            map_69955de2bcb6b5f20c3877d3b103e354.addControl(mini_map_e37bad4dbe96322d3a6316432babdcdd);
+            map_d8dc8adfea4556a96aa304fe3a4333bf.addControl(mini_map_1f0010e125a461eddfdb6ef3ee38ee12);
         
     
             L.control.fullscreen(
@@ -182,10 +182,10 @@
   "titleCancel": "Exit Full Screen",
   "forceSeparateButton": false,
 }
-            ).addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            ).addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
         
     
-            var measure_control_d220eff2ec11f89a0460c3eab18142c3 = new L.Control.Measure(
+            var measure_control_fec32365ceab8e69bda3050f1cbaafe8 = new L.Control.Measure(
                 {
   "position": "topright",
   "primaryLengthUnit": "kilometers",
@@ -193,7 +193,7 @@
   "primaryAreaUnit": "sqmeters",
   "secondaryAreaUnit": "acres",
 });
-            map_69955de2bcb6b5f20c3877d3b103e354.addControl(measure_control_d220eff2ec11f89a0460c3eab18142c3);
+            map_d8dc8adfea4556a96aa304fe3a4333bf.addControl(measure_control_fec32365ceab8e69bda3050f1cbaafe8);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171
@@ -212,20 +212,20 @@
 
         
     
-            var locate_control_1b720b3e0c104bc6096305e856f5b3a0 = L.control.locate(
+            var locate_control_8f105fcccb4830c2e7d7e1fa11751b0d = L.control.locate(
                 {}
-            ).addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            ).addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
             
         
     
-            var marker_b8572c037f476852e6d2b4f031ba4690 = L.marker(
+            var marker_8dbf7775ed117d7365d9c6705aa5f019 = L.marker(
                 [37.92274, 15.854208],
                 {
 }
-            ).addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            ).addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
         
     
-            var icon_20e43e1b91bd97c8b8bcb765cf67b520 = L.AwesomeMarkers.icon(
+            var icon_7383728f640954903d408e47b0e2613b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -236,24 +236,24 @@
             );
         
     
-        var popup_f2ac8b760adcc6a2d38ba3751d27d65b = L.popup({
+        var popup_53b4b245fc4d2c31a5f3d5983e91e64d = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_121e91dab484a672160e9c0568f46586 = $(`<div id="html_121e91dab484a672160e9c0568f46586" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Heart place — Condofuri Marina</h4>Where I recharge 🌊</div></div>`)[0];
-                popup_f2ac8b760adcc6a2d38ba3751d27d65b.setContent(html_121e91dab484a672160e9c0568f46586);
+                var html_eb1fbe370aef0ae4b8ac872f1c72df5d = $(`<div id="html_eb1fbe370aef0ae4b8ac872f1c72df5d" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Heart place — Condofuri Marina</h4>Where I recharge 🌊</div></div>`)[0];
+                popup_53b4b245fc4d2c31a5f3d5983e91e64d.setContent(html_eb1fbe370aef0ae4b8ac872f1c72df5d);
             
         
 
-        marker_b8572c037f476852e6d2b4f031ba4690.bindPopup(popup_f2ac8b760adcc6a2d38ba3751d27d65b)
+        marker_8dbf7775ed117d7365d9c6705aa5f019.bindPopup(popup_53b4b245fc4d2c31a5f3d5983e91e64d)
         ;
 
         
     
     
-            marker_b8572c037f476852e6d2b4f031ba4690.bindTooltip(
+            marker_8dbf7775ed117d7365d9c6705aa5f019.bindTooltip(
                 `<div>
                      Heart place — Condofuri Marina
                  </div>`,
@@ -263,22 +263,22 @@
             );
         
     
-                marker_b8572c037f476852e6d2b4f031ba4690.setIcon(icon_20e43e1b91bd97c8b8bcb765cf67b520);
+                marker_8dbf7775ed117d7365d9c6705aa5f019.setIcon(icon_7383728f640954903d408e47b0e2613b);
             
     
-            var circle_57932f3dfb42683ea618f2056a4c4bda = L.circle(
+            var circle_c53ea78b3934461e178647cfc70ef5c0 = L.circle(
                 [37.92274, 15.854208],
                 {"bubblingMouseEvents": true, "color": "#ff4d6d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4d6d", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500, "stroke": true, "weight": 2}
-            ).addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            ).addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
         
     
-            var feature_group_5b4a1546b11b3e0dfc395af5de357984 = L.featureGroup(
+            var feature_group_bcae40e042bdb5b3990a2940517977c0 = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_cluster_3cebc917dfbae714e9ebc2a998bccb94 = L.markerClusterGroup(
+            var marker_cluster_6036cac01f1b4b1b675e2c665bc837f7 = L.markerClusterGroup(
                 {
   "disableClusteringAtZoom": 7,
   "spiderfyOnMaxZoom": true,
@@ -286,14 +286,14 @@
             );
         
     
-            var marker_b8d49aea377016b5bc95849625964542 = L.marker(
-                [38.1113, 15.6613],
+            var marker_914c446c9618ac773228cdea9afbd6d7 = L.marker(
+                [38.111389, 15.661944],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var icon_7af6914e227abecbf757b13a84a34019 = L.AwesomeMarkers.icon(
+            var icon_1f4915feaa9a672012ddcd245805bf65 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "gray",
   "iconColor": "white",
@@ -304,24 +304,24 @@
             );
         
     
-        var popup_caecda8e72f8ef6965a350bee02cddf6 = L.popup({
+        var popup_61d8c68ee30ff03385d1d427997f57bd = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_5ab043a57153998bdecf0dac6f6d1da9 = $(`<div id="html_5ab043a57153998bdecf0dac6f6d1da9" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Home — where it all began</h4>Reggio Calabria, Italy<br/><br/>Birthplace and roots.</div></div>`)[0];
-                popup_caecda8e72f8ef6965a350bee02cddf6.setContent(html_5ab043a57153998bdecf0dac6f6d1da9);
+                var html_3b03d6e5ef8524879e927331653e5c7c = $(`<div id="html_3b03d6e5ef8524879e927331653e5c7c" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Home — where it all began</h4>Reggio Calabria, Italy<br/><br/>Birthplace and roots.</div></div>`)[0];
+                popup_61d8c68ee30ff03385d1d427997f57bd.setContent(html_3b03d6e5ef8524879e927331653e5c7c);
             
         
 
-        marker_b8d49aea377016b5bc95849625964542.bindPopup(popup_caecda8e72f8ef6965a350bee02cddf6)
+        marker_914c446c9618ac773228cdea9afbd6d7.bindPopup(popup_61d8c68ee30ff03385d1d427997f57bd)
         ;
 
         
     
     
-            marker_b8d49aea377016b5bc95849625964542.bindTooltip(
+            marker_914c446c9618ac773228cdea9afbd6d7.bindTooltip(
                 `<div>
                      Home — where it all began — Reggio Calabria
                  </div>`,
@@ -331,40 +331,40 @@
             );
         
     
-                marker_b8d49aea377016b5bc95849625964542.setIcon(icon_7af6914e227abecbf757b13a84a34019);
+                marker_914c446c9618ac773228cdea9afbd6d7.setIcon(icon_1f4915feaa9a672012ddcd245805bf65);
             
     
-            var marker_03d7bc68b68be7ee48835953d940ef89 = L.marker(
-                [38.1113, 15.6613],
+            var marker_f65842f1b5b5d3ef400d3e8588d34cf0 = L.marker(
+                [38.120953, 15.665163],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_d961625b862196f98e534f6744fe49aa = L.divIcon({
+            var div_icon_c05e8c1a70520b15027c8e7831a4f527 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#fd7e14;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      1\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_4f45bba8d45771bb83af3e2f1f168273 = L.popup({
+        var popup_cf2fc6f175afb2f8988ef8fa47ef0980 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_7686fa64ad2a9e63113f702b4806c45a = $(`<div id="html_7686fa64ad2a9e63113f702b4806c45a" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>BSc — Mediterranea University of Reggio Calabria</h4>Reggio Calabria, Italy<br/><small>2015-10-01</small><br/><br/>Bachelor's degree (2015–2019).</div></div>`)[0];
-                popup_4f45bba8d45771bb83af3e2f1f168273.setContent(html_7686fa64ad2a9e63113f702b4806c45a);
+                var html_4e648162019e4269f1cdd17cbb48855a = $(`<div id="html_4e648162019e4269f1cdd17cbb48855a" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>BSc — Mediterranea University of Reggio Calabria</h4>Reggio Calabria, Italy<br/><small>2015-10-01</small><br/><br/>Bachelor's degree (2015–2019).</div></div>`)[0];
+                popup_cf2fc6f175afb2f8988ef8fa47ef0980.setContent(html_4e648162019e4269f1cdd17cbb48855a);
             
         
 
-        marker_03d7bc68b68be7ee48835953d940ef89.bindPopup(popup_4f45bba8d45771bb83af3e2f1f168273)
+        marker_f65842f1b5b5d3ef400d3e8588d34cf0.bindPopup(popup_cf2fc6f175afb2f8988ef8fa47ef0980)
         ;
 
         
     
     
-            marker_03d7bc68b68be7ee48835953d940ef89.bindTooltip(
+            marker_f65842f1b5b5d3ef400d3e8588d34cf0.bindTooltip(
                 `<div>
                      1. BSc — Mediterranea University of Reggio Calabria — Reggio Calabria
                  </div>`,
@@ -374,40 +374,40 @@
             );
         
     
-                marker_03d7bc68b68be7ee48835953d940ef89.setIcon(div_icon_d961625b862196f98e534f6744fe49aa);
+                marker_f65842f1b5b5d3ef400d3e8588d34cf0.setIcon(div_icon_c05e8c1a70520b15027c8e7831a4f527);
             
     
-            var marker_3d0ddce9104b345321cdcef3f8a44c77 = L.marker(
+            var marker_62dda186c9ca16b831db22387b35a178 = L.marker(
                 [44.6471, 10.9252],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_cca7e3af39914e557480967026d697f8 = L.divIcon({
+            var div_icon_41bdb5d6a2496f575d0d3a88913bac49 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#fd7e14;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      2\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_93e321e34c800b6b9da70c74e7ec2cdf = L.popup({
+        var popup_55b62f75f5c75c19d7ed959cc9a598b9 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_f2bb3c6bea603586bd972b7af28fa720 = $(`<div id="html_f2bb3c6bea603586bd972b7af28fa720" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>MSc in Artificial Intelligence</h4>Modena, Italy<br/><small>2019-10-01</small><br/><br/>Master's degree (2019–2023).</div></div>`)[0];
-                popup_93e321e34c800b6b9da70c74e7ec2cdf.setContent(html_f2bb3c6bea603586bd972b7af28fa720);
+                var html_9688b733b3727b1a5e633239b87c6530 = $(`<div id="html_9688b733b3727b1a5e633239b87c6530" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>MSc in Artificial Intelligence</h4>Modena, Italy<br/><small>2019-10-01</small><br/><br/>Master's degree (2019–2023).</div></div>`)[0];
+                popup_55b62f75f5c75c19d7ed959cc9a598b9.setContent(html_9688b733b3727b1a5e633239b87c6530);
             
         
 
-        marker_3d0ddce9104b345321cdcef3f8a44c77.bindPopup(popup_93e321e34c800b6b9da70c74e7ec2cdf)
+        marker_62dda186c9ca16b831db22387b35a178.bindPopup(popup_55b62f75f5c75c19d7ed959cc9a598b9)
         ;
 
         
     
     
-            marker_3d0ddce9104b345321cdcef3f8a44c77.bindTooltip(
+            marker_62dda186c9ca16b831db22387b35a178.bindTooltip(
                 `<div>
                      2. MSc in Artificial Intelligence — Modena
                  </div>`,
@@ -417,40 +417,40 @@
             );
         
     
-                marker_3d0ddce9104b345321cdcef3f8a44c77.setIcon(div_icon_cca7e3af39914e557480967026d697f8);
+                marker_62dda186c9ca16b831db22387b35a178.setIcon(div_icon_41bdb5d6a2496f575d0d3a88913bac49);
             
     
-            var marker_7fd9a39cce5fa53f4c78f51be4fc0087 = L.marker(
+            var marker_b440900df4c47ef6d2bd2d82c7e126fd = L.marker(
                 [40.8518, 14.2681],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_b16465b154844d8f1a911ded03d8cf13 = L.divIcon({
+            var div_icon_c73a1d366445199e58827a52da887f42 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#6f42c1;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      3\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_74ffe393aaa69ee65a282fc2035ac692 = L.popup({
+        var popup_3eeccc721e29d3ff13f22c96d92cf5ea = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_118ace52abf7da6c618d307f8848b3cf = $(`<div id="html_118ace52abf7da6c618d307f8848b3cf" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>PhD in AI — University of Naples Federico II</h4>Naples, Italy<br/><small>2023-11-01</small><br/><br/>PhD program site (2023–2026).</div></div>`)[0];
-                popup_74ffe393aaa69ee65a282fc2035ac692.setContent(html_118ace52abf7da6c618d307f8848b3cf);
+                var html_efa6a19ec732a311f38228e66cfd2c25 = $(`<div id="html_efa6a19ec732a311f38228e66cfd2c25" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>PhD in AI — University of Naples Federico II</h4>Naples, Italy<br/><small>2023-11-01</small><br/><br/>PhD program site (2023–2026).</div></div>`)[0];
+                popup_3eeccc721e29d3ff13f22c96d92cf5ea.setContent(html_efa6a19ec732a311f38228e66cfd2c25);
             
         
 
-        marker_7fd9a39cce5fa53f4c78f51be4fc0087.bindPopup(popup_74ffe393aaa69ee65a282fc2035ac692)
+        marker_b440900df4c47ef6d2bd2d82c7e126fd.bindPopup(popup_3eeccc721e29d3ff13f22c96d92cf5ea)
         ;
 
         
     
     
-            marker_7fd9a39cce5fa53f4c78f51be4fc0087.bindTooltip(
+            marker_b440900df4c47ef6d2bd2d82c7e126fd.bindTooltip(
                 `<div>
                      3. PhD in AI — University of Naples Federico II — Naples
                  </div>`,
@@ -460,40 +460,40 @@
             );
         
     
-                marker_7fd9a39cce5fa53f4c78f51be4fc0087.setIcon(div_icon_b16465b154844d8f1a911ded03d8cf13);
+                marker_b440900df4c47ef6d2bd2d82c7e126fd.setIcon(div_icon_c73a1d366445199e58827a52da887f42);
             
     
-            var marker_780016c03547568c2d7febd7274f7147 = L.marker(
+            var marker_0102f07e560ab32a6c63ccc63e6b3b08 = L.marker(
                 [44.8015, 10.3279],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_f27693bd5e90cc9519588e2ca5948ff7 = L.divIcon({
+            var div_icon_5d079c4988b76f88ba7ddd9b029973b9 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#6f42c1;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      4\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_0c3c5a6b3a1c0c78b633725d31a08864 = L.popup({
+        var popup_f00917f15041e6e1a60443032c56cb75 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_97bd5600b66739a9a9e71ef671ee2d0b = $(`<div id="html_97bd5600b66739a9a9e71ef671ee2d0b" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>PhD in AI — IMEM-CNR (collaboration)</h4>Parma, Italy<br/><small>2023-11-15</small><br/><br/>Research collaboration base (2023–2026).</div></div>`)[0];
-                popup_0c3c5a6b3a1c0c78b633725d31a08864.setContent(html_97bd5600b66739a9a9e71ef671ee2d0b);
+                var html_9c5596f41962445240f3bc03ab9c2c6e = $(`<div id="html_9c5596f41962445240f3bc03ab9c2c6e" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>PhD in AI — IMEM-CNR (collaboration)</h4>Parma, Italy<br/><small>2023-11-15</small><br/><br/>Research collaboration base (2023–2026).</div></div>`)[0];
+                popup_f00917f15041e6e1a60443032c56cb75.setContent(html_9c5596f41962445240f3bc03ab9c2c6e);
             
         
 
-        marker_780016c03547568c2d7febd7274f7147.bindPopup(popup_0c3c5a6b3a1c0c78b633725d31a08864)
+        marker_0102f07e560ab32a6c63ccc63e6b3b08.bindPopup(popup_f00917f15041e6e1a60443032c56cb75)
         ;
 
         
     
     
-            marker_780016c03547568c2d7febd7274f7147.bindTooltip(
+            marker_0102f07e560ab32a6c63ccc63e6b3b08.bindTooltip(
                 `<div>
                      4. PhD in AI — IMEM-CNR (collaboration) — Parma
                  </div>`,
@@ -503,40 +503,40 @@
             );
         
     
-                marker_780016c03547568c2d7febd7274f7147.setIcon(div_icon_f27693bd5e90cc9519588e2ca5948ff7);
+                marker_0102f07e560ab32a6c63ccc63e6b3b08.setIcon(div_icon_5d079c4988b76f88ba7ddd9b029973b9);
             
     
-            var marker_21c1330352db6586301734b82994e700 = L.marker(
+            var marker_57dcb0fe6c71cdb8c1832cfc47b2185c = L.marker(
                 [40.4168, -3.7038],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_05cfc5cbdee00aae99f756d8b7b398cf = L.divIcon({
+            var div_icon_59906dd922084d19462546341e273087 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#0d6efd;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      5\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_12d263237f72579e39efefa1619c699a = L.popup({
+        var popup_6cd8579cfe5bb9a9505a783a0429d060 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_8be670589fabb406bfa5f6391535dab5 = $(`<div id="html_8be670589fabb406bfa5f6391535dab5" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Oral presentation — IEEE EAIS 2024</h4>Madrid, Spain<br/><small>2024-05-01</small><br/><br/>Oral presentation (May 2024).</div></div>`)[0];
-                popup_12d263237f72579e39efefa1619c699a.setContent(html_8be670589fabb406bfa5f6391535dab5);
+                var html_9d93149769dfe42af9975378ead04f4f = $(`<div id="html_9d93149769dfe42af9975378ead04f4f" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Oral presentation — IEEE EAIS 2024</h4>Madrid, Spain<br/><small>2024-05-01</small><br/><br/>Oral presentation (May 2024).</div></div>`)[0];
+                popup_6cd8579cfe5bb9a9505a783a0429d060.setContent(html_9d93149769dfe42af9975378ead04f4f);
             
         
 
-        marker_21c1330352db6586301734b82994e700.bindPopup(popup_12d263237f72579e39efefa1619c699a)
+        marker_57dcb0fe6c71cdb8c1832cfc47b2185c.bindPopup(popup_6cd8579cfe5bb9a9505a783a0429d060)
         ;
 
         
     
     
-            marker_21c1330352db6586301734b82994e700.bindTooltip(
+            marker_57dcb0fe6c71cdb8c1832cfc47b2185c.bindTooltip(
                 `<div>
                      5. Oral presentation — IEEE EAIS 2024 — Madrid
                  </div>`,
@@ -546,40 +546,40 @@
             );
         
     
-                marker_21c1330352db6586301734b82994e700.setIcon(div_icon_05cfc5cbdee00aae99f756d8b7b398cf);
+                marker_57dcb0fe6c71cdb8c1832cfc47b2185c.setIcon(div_icon_59906dd922084d19462546341e273087);
             
     
-            var marker_03d1b8ed3f1d291ed7ff3bfb0310a30f = L.marker(
+            var marker_110af681b7707ccc84393795baa68a1a = L.marker(
                 [35.4437, 139.638],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_18beb7e27ba3558e5a1c05ca0cb0826c = L.divIcon({
+            var div_icon_e3baa4a0ec914a97129129828e8dc4b2 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#0d6efd;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      6\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_e7ca5d23e49842b026cf395a1878d0a1 = L.popup({
+        var popup_a15358cd348fb3b2bbcfbb16c4283f71 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_91126751a7b891ef1b71da8ce56a8f14 = $(`<div id="html_91126751a7b891ef1b71da8ce56a8f14" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Oral presentation — IEEE WCCI 2024</h4>Yokohama, Japan<br/><small>2024-07-01</small><br/><br/>Oral presentation (July 2024).</div></div>`)[0];
-                popup_e7ca5d23e49842b026cf395a1878d0a1.setContent(html_91126751a7b891ef1b71da8ce56a8f14);
+                var html_155a6faf01d24fd2612ea1dbf098c3bd = $(`<div id="html_155a6faf01d24fd2612ea1dbf098c3bd" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Oral presentation — IEEE WCCI 2024</h4>Yokohama, Japan<br/><small>2024-07-01</small><br/><br/>Oral presentation (July 2024).</div></div>`)[0];
+                popup_a15358cd348fb3b2bbcfbb16c4283f71.setContent(html_155a6faf01d24fd2612ea1dbf098c3bd);
             
         
 
-        marker_03d1b8ed3f1d291ed7ff3bfb0310a30f.bindPopup(popup_e7ca5d23e49842b026cf395a1878d0a1)
+        marker_110af681b7707ccc84393795baa68a1a.bindPopup(popup_a15358cd348fb3b2bbcfbb16c4283f71)
         ;
 
         
     
     
-            marker_03d1b8ed3f1d291ed7ff3bfb0310a30f.bindTooltip(
+            marker_110af681b7707ccc84393795baa68a1a.bindTooltip(
                 `<div>
                      6. Oral presentation — IEEE WCCI 2024 — Yokohama
                  </div>`,
@@ -589,40 +589,40 @@
             );
         
     
-                marker_03d1b8ed3f1d291ed7ff3bfb0310a30f.setIcon(div_icon_18beb7e27ba3558e5a1c05ca0cb0826c);
+                marker_110af681b7707ccc84393795baa68a1a.setIcon(div_icon_e3baa4a0ec914a97129129828e8dc4b2);
             
     
-            var marker_e7e334b7342d3b94610e31a94f02123d = L.marker(
+            var marker_fa0a7a54f37b50a8e5e0768e48bc5f43 = L.marker(
                 [59.437, 24.7536],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_62b16fa325cfe2695d8205ae961178c6 = L.divIcon({
+            var div_icon_d41523917c93a085c3c03cbaccb2c0b2 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#fd7e14;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      7\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_76f33f00d5db214ffc6669c532d17354 = L.popup({
+        var popup_203fe86673fbe6397ced5816ba1ba54b = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_e66d8c1a9e0d13b4d2da905f55a540fe = $(`<div id="html_e66d8c1a9e0d13b4d2da905f55a540fe" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>BalticTeach Autumn School @ TalTech</h4>Tallinn, Estonia<br/><small>2024-11-12</small><br/><br/>PhD Autumn School (Nov 2024).</div></div>`)[0];
-                popup_76f33f00d5db214ffc6669c532d17354.setContent(html_e66d8c1a9e0d13b4d2da905f55a540fe);
+                var html_e4a9ceddb6d557171ef4964e96237e17 = $(`<div id="html_e4a9ceddb6d557171ef4964e96237e17" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>BalticTeach Autumn School @ TalTech</h4>Tallinn, Estonia<br/><small>2024-11-12</small><br/><br/>PhD Autumn School (Nov 2024).</div></div>`)[0];
+                popup_203fe86673fbe6397ced5816ba1ba54b.setContent(html_e4a9ceddb6d557171ef4964e96237e17);
             
         
 
-        marker_e7e334b7342d3b94610e31a94f02123d.bindPopup(popup_76f33f00d5db214ffc6669c532d17354)
+        marker_fa0a7a54f37b50a8e5e0768e48bc5f43.bindPopup(popup_203fe86673fbe6397ced5816ba1ba54b)
         ;
 
         
     
     
-            marker_e7e334b7342d3b94610e31a94f02123d.bindTooltip(
+            marker_fa0a7a54f37b50a8e5e0768e48bc5f43.bindTooltip(
                 `<div>
                      7. BalticTeach Autumn School @ TalTech — Tallinn
                  </div>`,
@@ -632,40 +632,40 @@
             );
         
     
-                marker_e7e334b7342d3b94610e31a94f02123d.setIcon(div_icon_62b16fa325cfe2695d8205ae961178c6);
+                marker_fa0a7a54f37b50a8e5e0768e48bc5f43.setIcon(div_icon_d41523917c93a085c3c03cbaccb2c0b2);
             
     
-            var marker_eee10bfa863c559c9e85e74d88acea71 = L.marker(
+            var marker_47bcf243bac22b445f4b1541d90759e2 = L.marker(
                 [41.9028, 12.4964],
                 {
 }
-            ).addTo(marker_cluster_3cebc917dfbae714e9ebc2a998bccb94);
+            ).addTo(marker_cluster_6036cac01f1b4b1b675e2c665bc837f7);
         
     
-            var div_icon_ad63897404865499920f07c2fa2dda76 = L.divIcon({
+            var div_icon_1d2fe15f7d2c432d97cfbfbf460366f8 = L.divIcon({
   "html": "\n    \u003cdiv style=\"background:#fd7e14;color:white;border-radius:50%;\n                width:28px;height:28px;line-height:28px;text-align:center;\n                font-weight:700;border:2px solid white;box-shadow:0 0 0 1px rgba(0,0,0,.25);\"\u003e\n      8\n    \u003c/div\u003e",
   "className": "empty",
 });
         
     
-        var popup_b983ac70c98d3ab3544a6fdce3820cb4 = L.popup({
+        var popup_13d4155b5f0f3aa4da3705a5bede58e9 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_bb65223850431e2d61c1171522729846 = $(`<div id="html_bb65223850431e2d61c1171522729846" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Pi School of AI</h4>Rome, Italy<br/><small>2025-02-01</small><br/><br/>Programme participation (Feb 2025).</div></div>`)[0];
-                popup_b983ac70c98d3ab3544a6fdce3820cb4.setContent(html_bb65223850431e2d61c1171522729846);
+                var html_19b1c786a49e9ec0e14fe09944ee4966 = $(`<div id="html_19b1c786a49e9ec0e14fe09944ee4966" style="width: 100.0%; height: 100.0%;"><div class='popup-card'><h4>Pi School of AI</h4>Rome, Italy<br/><small>2025-02-01</small><br/><br/>Programme participation (Feb 2025).</div></div>`)[0];
+                popup_13d4155b5f0f3aa4da3705a5bede58e9.setContent(html_19b1c786a49e9ec0e14fe09944ee4966);
             
         
 
-        marker_eee10bfa863c559c9e85e74d88acea71.bindPopup(popup_b983ac70c98d3ab3544a6fdce3820cb4)
+        marker_47bcf243bac22b445f4b1541d90759e2.bindPopup(popup_13d4155b5f0f3aa4da3705a5bede58e9)
         ;
 
         
     
     
-            marker_eee10bfa863c559c9e85e74d88acea71.bindTooltip(
+            marker_47bcf243bac22b445f4b1541d90759e2.bindTooltip(
                 `<div>
                      8. Pi School of AI — Rome
                  </div>`,
@@ -675,14 +675,14 @@
             );
         
     
-                marker_eee10bfa863c559c9e85e74d88acea71.setIcon(div_icon_ad63897404865499920f07c2fa2dda76);
+                marker_47bcf243bac22b445f4b1541d90759e2.setIcon(div_icon_1d2fe15f7d2c432d97cfbfbf460366f8);
             
     
-            marker_cluster_3cebc917dfbae714e9ebc2a998bccb94.addTo(feature_group_5b4a1546b11b3e0dfc395af5de357984);
+            marker_cluster_6036cac01f1b4b1b675e2c665bc837f7.addTo(feature_group_bcae40e042bdb5b3990a2940517977c0);
         
     
-            ant_path_d4d31f0b5caf60a4489ab3a744e9f352 = L.polyline.antPath(
-              [[38.1113, 15.6613], [44.6471, 10.9252], [40.8518, 14.2681], [44.8015, 10.3279], [40.4168, -3.7038], [35.4437, 139.638], [59.437, 24.7536], [41.9028, 12.4964]],
+            ant_path_afc6b55fd54caa750ecb29f54a432a49 = L.polyline.antPath(
+              [[38.120953, 15.665163], [44.6471, 10.9252], [40.8518, 14.2681], [44.8015, 10.3279], [40.4168, -3.7038], [35.4437, 139.638], [59.437, 24.7536], [41.9028, 12.4964]],
               {
   "stroke": true,
   "color": "#0d6efd",
@@ -708,17 +708,17 @@
   "delay": 700,
   "pulseColor": "#FFFFFF",
 }
-        ).addTo(feature_group_5b4a1546b11b3e0dfc395af5de357984);
+        ).addTo(feature_group_bcae40e042bdb5b3990a2940517977c0);
         
     
-            var marker_76ef3dda6a9f7dc26192d40dd701c8c2 = L.marker(
-                [38.1113, 15.6613],
+            var marker_0eba3c032977ea917600b3f108b7aafd = L.marker(
+                [38.120953, 15.665163],
                 {
 }
-            ).addTo(feature_group_5b4a1546b11b3e0dfc395af5de357984);
+            ).addTo(feature_group_bcae40e042bdb5b3990a2940517977c0);
         
     
-            var icon_4d5759af054a228107207a686e1b0759 = L.AwesomeMarkers.icon(
+            var icon_fc97b3a8187bd86b61f61b477db3f7fb = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -729,7 +729,7 @@
             );
         
     
-            marker_76ef3dda6a9f7dc26192d40dd701c8c2.bindTooltip(
+            marker_0eba3c032977ea917600b3f108b7aafd.bindTooltip(
                 `<div>
                      Start
                  </div>`,
@@ -739,17 +739,17 @@
             );
         
     
-                marker_76ef3dda6a9f7dc26192d40dd701c8c2.setIcon(icon_4d5759af054a228107207a686e1b0759);
+                marker_0eba3c032977ea917600b3f108b7aafd.setIcon(icon_fc97b3a8187bd86b61f61b477db3f7fb);
             
     
-            var marker_7c07782a9410d97bb8d49349948eb794 = L.marker(
+            var marker_33f2f15beb78a03fd911986c76162d3b = L.marker(
                 [41.9028, 12.4964],
                 {
 }
-            ).addTo(feature_group_5b4a1546b11b3e0dfc395af5de357984);
+            ).addTo(feature_group_bcae40e042bdb5b3990a2940517977c0);
         
     
-            var icon_0989f628cd64fbb0a8a8cb8f13ea1c5c = L.AwesomeMarkers.icon(
+            var icon_d17f323a915baf3120cabdd275ec1519 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkgreen",
   "iconColor": "white",
@@ -760,7 +760,7 @@
             );
         
     
-            marker_7c07782a9410d97bb8d49349948eb794.bindTooltip(
+            marker_33f2f15beb78a03fd911986c76162d3b.bindTooltip(
                 `<div>
                      Most recent
                  </div>`,
@@ -770,35 +770,35 @@
             );
         
     
-                marker_7c07782a9410d97bb8d49349948eb794.setIcon(icon_0989f628cd64fbb0a8a8cb8f13ea1c5c);
+                marker_33f2f15beb78a03fd911986c76162d3b.setIcon(icon_d17f323a915baf3120cabdd275ec1519);
             
     
-            feature_group_5b4a1546b11b3e0dfc395af5de357984.addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            feature_group_bcae40e042bdb5b3990a2940517977c0.addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
         
     
-            var layer_control_09eba89fc6e6c2ccf43fe596fd2a295e_layers = {
+            var layer_control_35a443d33bdf6be10d5a3634850b31cd_layers = {
                 base_layers : {
-                    "Light" : tile_layer_9218eac0526b4e488202ad0ffb2fc336,
-                    "Dark" : tile_layer_e68184c9336961fa04abb5d52c5d0f23,
+                    "Light" : tile_layer_b23c6f181d31e3b08b8332a75c9e7aba,
+                    "Dark" : tile_layer_7f8254824f2e44a73d92e97c857df60e,
                 },
                 overlays :  {
-                    "PhD journey stops" : feature_group_5b4a1546b11b3e0dfc395af5de357984,
+                    "PhD journey stops" : feature_group_bcae40e042bdb5b3990a2940517977c0,
                 },
             };
-            let layer_control_09eba89fc6e6c2ccf43fe596fd2a295e = L.control.layers(
-                layer_control_09eba89fc6e6c2ccf43fe596fd2a295e_layers.base_layers,
-                layer_control_09eba89fc6e6c2ccf43fe596fd2a295e_layers.overlays,
+            let layer_control_35a443d33bdf6be10d5a3634850b31cd = L.control.layers(
+                layer_control_35a443d33bdf6be10d5a3634850b31cd_layers.base_layers,
+                layer_control_35a443d33bdf6be10d5a3634850b31cd_layers.overlays,
                 {
   "position": "topright",
   "collapsed": false,
   "autoZIndex": true,
 }
-            ).addTo(map_69955de2bcb6b5f20c3877d3b103e354);
+            ).addTo(map_d8dc8adfea4556a96aa304fe3a4333bf);
 
         
     
-            map_69955de2bcb6b5f20c3877d3b103e354.fitBounds(
-                [[37.92274, 15.854208], [38.1113, 15.6613], [38.1113, 15.6613], [44.6471, 10.9252], [40.8518, 14.2681], [44.8015, 10.3279], [40.4168, -3.7038], [35.4437, 139.638], [59.437, 24.7536], [41.9028, 12.4964]],
+            map_d8dc8adfea4556a96aa304fe3a4333bf.fitBounds(
+                [[37.92274, 15.854208], [38.111389, 15.661944], [38.120953, 15.665163], [44.6471, 10.9252], [40.8518, 14.2681], [44.8015, 10.3279], [40.4168, -3.7038], [35.4437, 139.638], [59.437, 24.7536], [41.9028, 12.4964]],
                 {"padding": [20, 20]}
             );
         
