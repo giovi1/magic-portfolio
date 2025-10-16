@@ -7,7 +7,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "AI Engineer | PhD student",
+  role: "PhD student",
   avatar: "/images/avatar.jpg",
   email: "panellagnni@gmail.com",
   location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -209,7 +209,7 @@ const about = {
         title: "My Hometown",
         description: (
           <>
-            Born and raised in the beautiful city of Reggio Calabria,
+            Born and raised in the beautiful city of <a href="https://en.wikipedia.org/wiki/Reggio_Calabria" target="_blank" rel="noopener noreferrer">Reggio Calabria</a>,
             where the Mediterranean Sea meets the mountains. The city's rich history, stunning architecture, and vibrant culture have shaped who I am today.
             From the famous Riace Bronzes to the breathtaking views of the Strait of Messina, Reggio Calabria is truly a gem of southern Italy.
           </>
